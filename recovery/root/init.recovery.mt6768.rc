@@ -38,7 +38,7 @@ on post-fs
     # add crypto start here:
     start keystore2
     start gatekeeperd
-    start keymaster-hal
+    start keymint-hal
     start gatekeeper-hal
     start vold
 
