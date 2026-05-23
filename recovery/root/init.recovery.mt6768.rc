@@ -66,15 +66,17 @@ service gatekeeperd /system/bin/gatekeeperd
     user system
     group system
 
-service keymaster-hal /vendor/bin/keymaster-4.1
+service keymint-hal /vendor/bin/hw/keymint
     class main
     user system
     group system
+    critical
 
-service gatekeeper-hal /vendor/bin/gatekeeper-1.0
+service gatekeeper-hal /vendor/bin/hw/gatekeeper
     class main
     user system
     group system
+    critical
 
 service vold /system/bin/vold
     class main
